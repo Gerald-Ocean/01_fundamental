@@ -59,6 +59,10 @@ const stringToRemove: string = "ell"
 const newString: string = originalString.replace(stringToRemove, "o")
 console.log(newString);
 
+
+// Soal 8
+// Write a code to find the largest of two given integers
+// ○ Example : num1 = 42, num2 = 27 → 42
 const num1: number = 42 
 const num2: number = 27
 if (num1 < num2) {
