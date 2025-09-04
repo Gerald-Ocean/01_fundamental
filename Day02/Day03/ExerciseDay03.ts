@@ -56,6 +56,14 @@ console.log(`Rp. ${idRupiah.toLocaleString("id-ID")},00`);
 // ○ Example : string = “Hello world”, search string = “ell” → “Ho world”
 const originalString: string = "Hello world"
 const stringToRemove: string = "ell"
-const newString: string = originalString.replace(stringToRemove, "")
+const newString: string = originalString.replace(stringToRemove, "o")
 console.log(newString);
 
+const num1: number = 42 
+const num2: number = 27
+if (num1 < num2) {
+    console.log(num2);
+} else {
+    console.log(num1);
+    
+} 

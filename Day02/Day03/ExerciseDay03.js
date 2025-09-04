@@ -48,5 +48,13 @@ console.log("Rp. ".concat(idRupiah.toLocaleString("id-ID"), ",00"));
 // ○ Example : string = “Hello world”, search string = “ell” → “Ho world”
 var originalString = "Hello world";
 var stringToRemove = "ell";
-var newString = originalString.replace(stringToRemove, "");
+var newString = originalString.replace(stringToRemove, "o");
 console.log(newString);
+var num1 = 42;
+var num2 = 27;
+if (num1 < num2) {
+    console.log(num2);
+}
+else {
+    console.log(num1);
+}
