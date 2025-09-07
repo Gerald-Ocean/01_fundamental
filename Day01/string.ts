@@ -11,7 +11,7 @@ let alamat:string = "Jl.Pemuda No. 40 Semarang Jawa Tengah";
 let printToko: string = namaToko + " " + alamat;
 console.log(printToko); 
 
-// Cara 2 : Menggunakan template literal / backthick 
+// Cara 2 : Menggunakan template literal / backtick (atau ``)
 printToko = `${namaToko} ${alamat}`;
 console.log(printToko); 
 
