@@ -1,0 +1,35 @@
+<script>
+   let daftarBelanja = ["Baju", "Topi", "Sepatu"];
+   let running = true; 
+
+   while (running) {
+    const menu = prompt(
+        "=== MENU DAFTAR BELANJA===\n" + 
+        "1. Lihat Data\n" +
+        "2. Tambah Data\n" +
+        "3. Update Data\n" +
+        "4. Hapus Data\n" +
+        "5. Keluar\n" +
+        "Pilih menu (1-5):"
+    );
+    
+    if (menu === "1") {
+        alert("Data: " + daftarBelanja.join(", "));
+    } else if (menu === "2") {
+        const item = prompt("Masukkan item baru:");
+        if (item) daftarBelanja.push(item);
+    } else if (menu === "3") {
+        const index = prompt("Index yang akan diupdate (0-" + (daftarBelanja.length-1) + "):");
+        const newItem = prompt("Item baru:");
+        if (index !== null && newItem) daftarBelanja[index] = newItem;
+    } else if (menu === "4") {
+        const index = prompt("Index yang akan dihapus (0-" + (daftarBelanja.length-1) + "):");
+        if (index !== null) daftarBelanja.splice(index, 1);
+    } else if (menu === "5") {
+        running = false;
+        alert("Terima kasih!");
+    } else {
+        alert("Pilihan tidak valid!");
+    }
+   }
+</script>

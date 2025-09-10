@@ -163,3 +163,6 @@ for (let index: number = 0; index < apel.length; index++){
 }
 console.log(apelBaru);
 
+
+
+
